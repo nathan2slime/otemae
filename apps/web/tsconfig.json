@@ -1,0 +1,12 @@
+{
+  "extends": "@mae/tsconfig/react-library.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist/",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

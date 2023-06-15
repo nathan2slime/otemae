@@ -1,0 +1,23 @@
+.no-search-results-container {
+  width: 100vw;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+
+  svg {
+    width: 80px;
+    color: var(--primary-color-up);
+  }
+
+  h4 {
+    font-family: var(--font-family);
+    letter-spacing: 0.03rem;
+    font-size: 1rem;
+    color: var(--text-color-down);
+  }
+}

@@ -1,0 +1,69 @@
+.index-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  height: 100dvh;
+  overflow-x: hidden;
+
+  background: var(--background-color-down);
+  padding: 90px 20px 20px;
+
+  @include scrollbar;
+
+  .animes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    max-width: 180px;
+    margin: auto;
+    gap: 20px;
+
+    .mae-card-container {
+      max-width: 100%;
+    }
+
+    @include query('sm') {
+      display: grid;
+      max-width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+
+      .mae-card-container {
+        max-width: 165px;
+      }
+    }
+
+    .mae-ghost-loader-container {
+      width: 100%;
+      height: 280px;
+      border-radius: 5px;
+    }
+  }
+
+  .mae-modal-container {
+    z-index: 12;
+
+    > div {
+      width: 100%;
+      max-width: 100%;
+      min-height: 400px;
+      height: 100%;
+      overflow-y: auto;
+      border-radius: 0px;
+      background: var(--background-color-down);
+
+      @include query('md') {
+        height: fit-content;
+        max-width: 600px;
+        border-radius: 10px;
+        overflow-y: hidden;
+        width: 90%;
+      }
+    }
+  }
+
+  @include query('md') {
+    padding: 95px 95px 20px;
+  }
+}

@@ -1,0 +1,14 @@
+@import './themes/dark.theme.scss';
+@import './themes/light.theme.scss';
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

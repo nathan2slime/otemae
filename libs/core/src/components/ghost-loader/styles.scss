@@ -1,0 +1,10 @@
+.mae-ghost-loader-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    var(--ghost-loader-color-up) 0%,
+    var(--ghost-loader-color-down) 50%,
+    var(--ghost-loader-color-up) 100%
+  );
+}
